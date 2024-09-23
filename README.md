@@ -1,7 +1,4 @@
-## opReg
-
-
-Operators Registation:
+## Operators Registation:
 
 -   **Ops**: 
     - We verify registations via a python script to make sure registations are from qualified operators.
