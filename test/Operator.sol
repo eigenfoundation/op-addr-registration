@@ -12,13 +12,13 @@ contract OperatorTest is Test {
     }
 
     function test_Reg() public {
-        string memory asciiMessage = "I agree to have my operator/staker EIGEN allocation be claimed from the registered wallet in this transaction.";
-        op.register(address(0), asciiMessage);
+        string memory asciiMessage = "I agree to have my operator EIGEN allocation be claimed from the registered wallet in this transaction.";
+        op.Register(address(0), asciiMessage);
     }
 
     function testFail_Reg() public {
         string memory asciiMessage = "I dont agree!";
-        op.register(address(0), asciiMessage);
+        op.Register(address(0), asciiMessage);
         vm.expectRevert();
     }
 

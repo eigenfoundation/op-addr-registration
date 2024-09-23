@@ -3,8 +3,15 @@
 
 Operators Registation:
 
--   **Assumptions**: 
+-   **Ops**: 
     - We verify registations via a python script to make sure registations are from qualified operators.
-    - To register via smartcontract, an operator should send their prefered wallet and include the verbage that will be shared.
--   **dev**: run `forge test -vvvv` to verify registration ops
--   **operator reg*** : `cast send 0x... "register((address,string memory)" "(0x...,"I agree to have my operator...")" --rpc-url https://your-url --private-key your-operator-private-key`
+    - To register, an operator should send a transaction from their operator key with their prefered wallet and include the verbage below.
+    - `I agree to have my operator EIGEN allocation be claimed from the registered wallet in this transaction.`
+    - If you register more than once, the latest registration before the cutoff time period will be considered.
+    - The registered wallet should be able to connect to the claims webapp, sign a message and send a transaction.
+-   **Operator Registration**: 
+    - Operators must sign a transaction with the first param being the 
+        - `registeredWallet` - the wallet that will be used to claim EIGENS from the claims webapp
+        - `operatorMessage` - `I agree to have my operator EIGEN allocation be claimed from the registered wallet in this transaction.`
+    - You could use foundry's cast tool to send this transaction, but you can use any tooling of your preference.
+    - `cast send 0x...... "Register((address,string memory)" "(0x...,"I agree to have my operator...")" --rpc-url https://your-url --private-key your-operator-private-key`
