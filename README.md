@@ -13,5 +13,3 @@ Operators Registation:
     - Operators must sign a transaction with the first param being the 
         - `registeredWallet` - the wallet that will be used to claim EIGENS from the claims webapp
         - `operatorMessage` - `I agree to have my operator EIGEN allocation be claimed from the registered wallet in this transaction.`
-    - You could use foundry's cast tool to send this transaction, but you can use any tooling of your preference.
-    - `cast send 0x...... "Register((address,string memory)" "(0x...,"I agree to have my operator...")" --rpc-url https://your-url --private-key your-operator-private-key`
