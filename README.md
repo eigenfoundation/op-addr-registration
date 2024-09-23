@@ -10,6 +10,6 @@ Operators Registation:
     - If you register more than once, the latest registration before the cutoff time period will be considered.
     - The registered wallet should be able to connect to the claims webapp, sign a message and send a transaction.
 -   **Operator Registration**: 
-    - Operators must sign a transaction with the following param.
+    - Operators must sign a transaction with the following params to `0x09FC12eA5Fbfe97529d576F0426DcCC85E3Ee488`.
         - `registeredWallet` - the wallet that will be used to claim EIGENS from the claims webapp
         - `operatorMessage` - `I agree to have my operator EIGEN allocation be claimed from the registered wallet in this transaction.`
