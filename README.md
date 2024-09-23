@@ -10,3 +10,4 @@
     - Operators must sign a transaction using their operator key and the following parameters to `0x8bB56D1CBA6273478E9B4D79F89857ac8D766eb3`.
         - `registeredWallet` - the wallet that will be used to claim EIGENS from the claims webapp
         - `operatorMessage` - `I agree to have my operator EIGEN allocation be claimed from the registered wallet in this transaction.`
+        - example tx using foundry `cast send 0x8bB56D1CBA6273478E9B4D79F89857ac8D766eb3 "Register(address,string)" 0x..........registeredWallet "I agree to have my operator EIGEN allocation be claimed from the registered wallet in this transaction." --private-key ***operatorKey*** --rpc-url https://yor-rpc-url.here`
