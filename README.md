@@ -1,7 +1,7 @@
-## Operator Registation:
+## Operator Registration:
 
 -   **Ops**: 
-    - We verify registations via a python script to make sure registations are from qualified operators.
+    - We verify registrations via a python script to make sure registrations are from qualified operators.
     - To register, an operator should send a transaction from their operator key with their prefered wallet and include the verbage below.
     - `I agree to have my operator EIGEN allocation be claimed from the registered wallet in this transaction.`
     - If you register more than once, the latest registration before the cutoff time period will be considered.
